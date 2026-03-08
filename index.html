@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q3 Seatwork 2</title>
+
+    <style>
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url("bg.png");
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background: #ffffff;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .header-logo img {
+            height: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            margin-left: 30px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #b12704;
+        }
+
+        h1 {
+            margin: 30px 30px 10px 30px;
+            font-size: 70px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        p {
+            font-size: 20px;
+            margin: 0 30px 20px 20px;
+        }
+
+        .section-title {
+            font-size: 60px;
+            margin: 50px 0 20px 0;
+            font-weight: 600;
+        }
+
+        .carousel-side {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 50px auto;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.05);
+            border: 5px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px 15px;
+        }
+
+        .carousel-window {
+            overflow: hidden;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .track {
+            display: flex;
+            transition: 0.5s;
+        }
+
+        .slide {
+            min-width: 33.3%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            border: 2px solid #333;
+            border-radius: 15px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .slide img:hover {
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+        }
+
+        .leo-names {
+            display: block;
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .slide a {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .slide a:hover {
+            text-decoration: underline;
+            color: #b12704;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #b12704;
+            margin-top: 5px;
+        }
+
+        .btn {
+            position: absolute;
+            top: 30%;
+            background: none;
+            border: none;
+            font-size: 40px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .left-btn { left: -50px; }
+        .right-btn { right: -50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="gk.png" alt="leotards">
+            <img src="gap.png" alt="leotards">
+        </div>
+        <nav>
+            <a href="https://www.linkedin.com/company/gk-elite#:~:text=Locations,Reading%20PA%2019604%2C%20US">LOCATIONS</a>
+            <a href="https://www.gkelite.com/">MAIN STORE</a>
+        </nav>
+    </header>
+
+    <h1>GK ELITE GYMNASTICS LEOTARDS 🇵🇭</h1>
+    <p>Dear Gymnasts and Customers, unfortunately, GK Elite Leotards has no physical stores in the Philippines yet! Kindly see our trusted online suppliers below instead.</p>
+
+    <h2 class="section-title">Toddler to Pre-teen Leotards</h2>
+    <div class="carousel-side">
+        <button class="btn left-btn" onclick="goBack('kidsTrack')">❮</button>
+        <div class="carousel-window">
+            <div class="track" id="kidsTrack">
+
+                <div class="slide"><img src="purplenike.jpg" alt="leotards"><span class="leo-names">Classic Purple</span><a href="https://www.ebay.com">E-Bay PH</a><p class="price">₱2,300</p></div>
+                <div class="slide"><img src="dreamwave.jpg" alt="leotards"><span class="leo-names">Dream Wave</span><a href="https://www.lazada.com.ph/#? ">Lazada PH</a><p class="price">₱2,600</p></div>
+                <div class="slide"><img src="rbheart.jpg" alt="leotards"><span class="leo-names">Rainbow Hearts</span><a href="https://www.carousell.ph">Carousell PH</a><p class="price">₱3,350</p></div>
+
+                <div class="slide"><img src="urbancamo.jpg" alt="leotards"><span class="leo-names">Urban Camo</span><a href="https://www.ubuy.com.phs:">Ubuy PH</a><p class="price">₱2,500</p></div>
+                <div class="slide"><img src="blushbows.jpg" alt="leotards"><span class="leo-names">Blush Bows</span><a href="https://jivi.ph ">Jivi PH</a><p class="price">₱3,200</p></div>
+                <div class="slide"><img src="berryuni.jpg" alt="leotards"><span class="leo-names">Unicorn Berry</span><a href="https://www.ubuy.com.ph ">Ubuy PH</a><p class="price">₱2,900</p></div>
+
+                <div class="slide"><img src="purplecherry.jpg" alt="leotards"><span class="leo-names">Purple Cherries</span><a href="https://jivi.ph ">Jivi PH</a><p class="price">₱2,000</p></div>
+                <div class="slide"><img src="lavripple.jpg" alt="leotards"><span class="leo-names">Lavender Ripple</span><a href="https://www.carousell.ph">Carousell PH</a><p class="price">₱2,300</p></div>
+                <div class="slide"><img src="berrydreams.jpg" alt="leotards"><span class="leo-names">Berry Dreams</span><a href="https://www.ebay.com">E-Bay PH</a><p class="price">₱2,500</p></div>
+
+            </div>
+        </div>
+        <button class="btn right-btn" onclick="goForward('kidsTrack')">❯</button>
+
+    </div>
+
+    <h2 class="section-title">Teen to Adult Leotards</h2>
+    <div class="carousel-side">
+        <button class="btn left-btn" onclick="goBack('adultsTrack')">❮</button>
+        <div class="carousel-window">
+            <div class="track" id="adultsTrack">
+
+                <div class="slide"><img src="magentafearless.jpg" alt="leotards"><span class="leo-names">Jordan's Fearless</span><a href="https://www.ubuy.com.ph ">Ubuy PH</a><p class="price">₱4,500</p></div>
+                <div class="slide"><img src="pinkpower.jpg" alt="leotards"><span class="leo-names">Simone's Power</span><a href="https://jivi.ph ">Jivi PH</a><p class="price">₱4,200</p></div>
+                <div class="slide"><img src="bowtastic.jpg" alt="leotards"><span class="leo-names">Bowtastic</span><a href="https://www.carousell.ph">Carousell PH</a><p class="price">₱3,800</p></div>
+
+                <div class="slide"><img src="longsleeve.jpg" alt="leotards"><span class="leo-names">Sparkle Sleeves</span><a href="https://www.lazada.com.ph/#? ">Lazada PH</a><p class="price">₱3,500</p></div>
+                <div class="slide"><img src="navy.jpg" alt="leotards"><span class="leo-names">Classic Navy</span><a href="https://www.carousell.ph">Carousell PH</a><p class="price">₱3,000</p></div>
+                <div class="slide"><img src="coralpeach.jpg" alt="leotards"><span class="leo-names">Coral Peach</span><a href="https://www.ebay.com">E-Bay PH</a><p class="price">₱3,600</p></div>
+
+                <div class="slide"><img src="elegantspark.jpg" alt="leotards"><span class="leo-names">Elegant Spark</span><a href="https://www.ubuy.com.ph ">Ubuy PH</a><p class="price">₱3,700</p></div>
+                <div class="slide"><img src="lsu.jpg" alt="leotards"><span class="leo-names">LSU Tribute</span><a href="https://www.lazada.com.ph/#? ">Lazada PH</a><p class="price">₱3,400</p></div>
+                <div class="slide"><img src="starlit.jpg" alt="leotards"><span class="leo-names">Silver Lining</span><a href="https://www.ebay.com">E-Bay PH</a><p class="price">₱4,250</p></div>
+
+            </div>
+        </div>
+        <button class="btn right-btn" onclick="goForward('adultsTrack')">❯</button>
+
+    </div>
+
+    <h2 class="section-title">Accessories</h2>
+    <div class="carousel-side">
+        <button class="btn left-btn" onclick="goBack('accTrack')">❮</button>
+        <div class="carousel-window">
+            <div class="track" id="accTrack">
+
+                <div class="slide"><img src="grips.jpg" alt="leotards"><span class="leo-names">Protective Grips</span><a href="https://jivi.ph ">Jivi PH</a><p class="price">₱850</p></div>
+                <div class="slide"><img src="chalk.jpg" alt="leotards"><span class="leo-names">Bar Chalk</span><a href="https://www.carousell.ph">Carousell PH</a><p class="price">₱600</p></div>
+                <div class="slide"><img src="wristbands.jpg" alt="leotards"><span class="leo-names">Wrist Bands</span><a href="https://www.ubuy.com.ph ">Ubuy PH</a><p class="price">₱450</p></div>
+
+                <div class="slide"><img src="scrunchie.jpg" alt="leotards"><span class="leo-names">Sparkly Scrunchie</span><a href="https://www.lazada.com.ph/#? ">Lazada PH</a><p class="price">₱300</p></div>
+                <div class="slide"><img src="bow.jpg" alt="leotards"><span class="leo-names">Glittery Bow</span><a href="https://www.ebay.com">E-Bay PH</a><p class="price">₱150</p></div>
+                <div class="slide"><img src="gripbag.jpg" alt="leotards"><span class="leo-names">Equipment Bag</span><a href="https://www.carousell.ph">Carousell PH</a><p class="price">₱1,200</p></div>
+
+            </div>
+        </div>
+        <button class="btn right-btn" onclick="goForward('accTrack')">❯</button>
+
+    </div>
+
+    <script>
+        function goForward(id) {
+            var track = document.getElementById(id);
+            var pos = 0;
+            if (track.style.transform) {
+                pos = parseInt(track.style.transform.replace('translateX(', '').replace('%)', ''));
+            }
+            var limit = -200; 
+            if (id === 'accTrack') { limit = -100; }
+            if (pos > limit) {
+                pos = pos - 100;
+            } else {
+                pos = 0;
+            }
+            track.style.transform = "translateX(" + pos + "%)";
+        }
+
+        function goBack(id) {
+            var track = document.getElementById(id);
+            var pos = 0;
+            if (track.style.transform) {
+                pos = parseInt(track.style.transform.replace('translateX(', '').replace('%)', ''));
+            }
+            var limit = -200;
+            if (id === 'accTrack') { limit = -100; }
+            if (pos < 0) {
+                pos = pos + 100;
+            } else {
+                pos = limit;
+            }
+            track.style.transform = "translateX(" + pos + "%)";
+        }
+    </script>
+</body>
+</html>
